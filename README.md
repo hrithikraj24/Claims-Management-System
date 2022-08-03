@@ -67,12 +67,12 @@ After entering your Member ID, this is how your window will look.
 ### Submitting a Claim
 
 If a user wishes to submit a claim, the submit claim form can be used where the user can enter details regarding 
-** Policy ID
-** Policy Name
-** Policy Benefits
-** Hospital Name
-** Benefits Availed
-** Claimed Amount
+* Policy ID
+* Policy Name
+* Policy Benefits
+* Hospital Name
+* Benefits Availed
+* Claimed Amount
 
 Based on the details provided the status of the claim is decided to be either `Sanctioned` or `Rejected`. User will also be alloted a `Claim ID` for future reference.
 ![Submit Claim](https://user-images.githubusercontent.com/51511924/182540964-d44831f1-a483-479f-ac6c-5acedaff3aaf.jpg)
