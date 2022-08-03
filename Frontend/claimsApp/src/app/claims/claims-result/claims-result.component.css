@@ -1,0 +1,63 @@
+.parent {
+  height: 89vh;
+  display: flex;
+  align-items: center;
+  background-color: white;
+}
+
+.container {
+  margin-top: 200px;
+  height: 66vh;
+  width: 40vw;
+  border: 2px solid;
+  border-radius: 20px;
+  border-color: #00000040;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 100px;
+  margin-top: 20px;
+}
+
+.partA{
+  font-family: Poppins;
+  color:#6399E4;
+}
+.partB{
+  font-family: Poppins;
+  color:#000000;
+}
+
+.billrow--detail {
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 100px 40px 30px;
+}
+
+.statusrow--detail {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 30px 40px 30px;
+}
+
+h5{
+  color:#6399E4;
+}
+
+.bill--tag {
+  color: #00000099;
+  margin-left: 30px;
+}
+
+.bold {
+  color: #00000099;
+  font-weight: 800;
+}
+
+p {
+  margin-top: 5px;
+}

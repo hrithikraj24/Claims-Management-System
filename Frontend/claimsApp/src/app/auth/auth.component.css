@@ -1,0 +1,77 @@
+
+
+input.ng-invalid.ng-touched {
+  border: 2px solid red;
+}
+
+
+.row {
+  top:150px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  height: 100%;
+}
+
+.row__content {
+  height: 90%;
+  width: 300px;
+  border: 1px solid rgb(209, 209, 209);
+  padding: 40px;
+  border-radius: 8%;
+  position: relative;
+  left: 30px;
+  top: 140px;
+}
+
+.form-control{
+  color: #00000099;
+}
+
+.checkbox{
+  color: #00000099;
+}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  color: #00000099;
+
+}
+
+button {
+  background-color: #6399E4;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 50%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.container {
+  padding: 16px;
+}
+
+
+.header__img {
+  position: absolute;
+  width: 610px;
+  height: 530px;
+  left: 770px;
+  top: 70px;
+}
+
+.btn[disabled] {
+  cursor: not-allowed;
+}
+
+

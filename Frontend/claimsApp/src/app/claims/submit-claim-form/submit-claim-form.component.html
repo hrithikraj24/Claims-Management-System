@@ -1,0 +1,71 @@
+<div class="back">
+<div class="container">
+  <div>
+    <img
+        src="../../assets/img/ClickIcon.png"
+        class="header__img" style="margin-left: -15%; margin-top: -10%;"
+        alt="svg image"
+      />
+  </div>
+  <div class="spinner" *ngIf="isValidating" class="spinner">
+    <app-loading-spinner></app-loading-spinner>
+  </div>
+  <form (ngSubmit)="onSubmit(f)" #f="ngForm" *ngIf="!isValidating">
+    <div class="heading">
+      <h2 class="heading">
+        <span class="partA">Submit&nbsp;</span>
+          <span class="partB">Claim</span>
+      </h2>
+    </div>
+
+    <div class="from-group row">
+
+      <div class="col-xs-6 col-md-6 row__content">
+        <label for="policyId">Policy Id</label>
+        <input type="text" class="form-control" name="policyId" placeholder="Enter policy id" ngModel required #policyId="ngModel"/>
+        <span *ngIf="policyId.touched && !policyId.valid" style="color: red">Please enter policy ID</span>
+      </div>
+
+      <div class="col-xs-6 col-md-6 row__content">
+        <label for="policyName">Policy Name</label>
+        <input type="text" class="form-control" name="policyName" placeholder="Enter policy name" ngModel required #policyName="ngModel"/>
+        <span *ngIf="policyName.touched && !policyName.valid" style="color: red">Please enter policy name</span>
+      </div>
+
+      <div class="col-xs-6 col-md-6 row__content">
+        <label for="policyBenefits">Policy Benefits</label>
+        <input type="text" class="form-control" name="policyBenefits" placeholder="Enter policy benefit" ngModel required #policyBenefit="ngModel"/>
+        <span *ngIf="policyBenefit.touched && !policyBenefit.valid" style="color: red">Please enter policy benefit</span>
+      </div>
+
+      <div class="col-xs-6 col-md-6 row__content">
+        <label for="hospitalName">Hospital Name</label>
+        <input type="text" class="form-control" name="hospitalName" placeholder="Enter hospital name" ngModel required #hospitalName="ngModel"/>
+        <span *ngIf="hospitalName.touched && !hospitalName.valid" style="color: red">Please enter hospital name</span>
+      </div>
+
+      <div class="col-xs-6 col-md-6 row__content">
+        <label for="benefitsAvailed">Benefits Availed</label>
+        <input type="number" class="form-control" name="benefitsAvailed" placeholder="Enter the benefits to be availed" ngModel required #benefitsAvailed="ngModel"/>
+        <span *ngIf="benefitsAvailed.touched && !benefitsAvailed.valid" style="color: red">Please enter the benefits to be availed</span>
+      </div>
+
+      <div class="col-xs-6 col-md-6 row__content">
+        <label for="amount">Claimed Amount</label>
+        <input type="number" class="form-control" name="amount" placeholder="Enter the claimed amount" ngModel required #amount="ngModel"/>
+        <span *ngIf="amount.touched && !amount.valid" style="color: red">Please enter claimed amount</span>
+      </div>
+    </div>
+
+    <button class="btn btn-dark" type="submit" [disabled]="!f.valid" >
+      Submit &rarr;
+    </button>
+  </form>
+
+  <app-alert
+    [message]="error"
+    *ngIf="error"
+    (close)="handleError()"
+  ></app-alert>
+</div>
+</div>

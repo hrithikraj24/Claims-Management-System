@@ -1,0 +1,63 @@
+h2 {
+  text-align: center;
+  margin: 10px 0 40px 0;
+}
+.partA{
+  font-family: Poppins;
+  color:#6399E4;
+}
+.partB{
+  font-family: Poppins;
+  color:#000000;
+}
+
+.container {
+  border: 2px solid rgb(149 146 146);
+  margin-top: 200px;
+  padding: 30px 80px;
+  border-radius: 20px;
+}
+
+.header_img{
+  top:50px;
+}
+
+.row {
+  top:200px;
+  height: 400px;
+}
+.row__content {
+  top: 10px;
+  margin-bottom: 30px;
+  width: 20%;
+  color: #6399E4;
+
+}
+
+input.form-control.placeholder{
+  color: #00000029;
+
+
+}
+
+input.ng-invalid.ng-touched {
+  border: 2px solid red;
+}
+
+.spinner {
+  text-align: center;
+}
+
+.btn {
+  padding: 12.5px 35px;
+  border-radius: 100px;
+
+}
+button{
+  background-color:#6399E4;
+  border:none;
+}
+
+.btn[disabled] {
+  cursor: not-allowed;
+}

@@ -1,0 +1,66 @@
+
+<div class="parent">
+  <div class="container" *ngIf="!isClaimStatusMode">
+    <div class="heading">
+      <div>
+        <img
+            src="../../assets/img/ClaimIcon.png"
+            class="header__img" style="margin-left: -280px; margin-top: -50px;"
+            alt="svg image"
+          />
+      </div>
+      <h2 class="heading">
+        <span class="partA">Bill&nbsp;</span>
+          <span class="partB">Status</span>
+      </h2>
+    </div>
+    <div class="bill__details">
+      <div class="billrow--detail">
+        <h5>Last Paid Date:</h5>
+        <p class="bill--tag">{{ bill.lastPaidDate }}</p>
+      </div>
+
+      <div class="billrow--detail">
+        <h5>Premium Amount Due:</h5>
+        <p class="bill--tag">{{ bill.premiumDue }}</p>
+      </div>
+      <div class="billrow--detail">
+        <h5>Due Date:</h5>
+        <p class="bill--tag">{{ bill.dueDate }}</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Status Mode -->
+  <div class="container" *ngIf="isClaimStatusMode">
+    <div class="heading">
+      <div>
+        <img
+            src="../../assets/img/ClaimIcon.png"
+            class="header__img" style="margin-left: -260px; margin-top: -50px;"
+            alt="svg image"
+          />
+      </div>
+      <h2 class="heading">
+        <span class="partA">Claim&nbsp;</span>
+          <span class="partB">Status</span>
+      </h2>
+    </div>
+    <div class="bill__details">
+      <div class="statusrow--detail">
+        <h5>Claim Id:</h5>
+        <p class="bill--tag bold">{{ claim.claimNo }}</p>
+      </div>
+
+      <div class="statusrow--detail">
+        <h5>Claim Status:</h5>
+        <p class="bill--tag bold">{{ claim.status }}</p>
+      </div>
+
+      <div class="statusrow--detail">
+        <h5>Description:</h5>
+        <p class="bill--tag">{{ claim.remarks }}</p>
+      </div>
+    </div>
+  </div>
+</div>

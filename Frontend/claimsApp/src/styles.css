@@ -1,0 +1,19 @@
+/* You can add global styles to this file, and also import other style files */
+html {
+  box-sizing: border-box;
+}
+
+body {
+
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  color: rgb(0, 83, 139);
+  line-height: 1.9;
+  padding: 0 30px;
+  position: relative;
+}
+
+.heading {
+  display: flex;
+  justify-content: center;
+}

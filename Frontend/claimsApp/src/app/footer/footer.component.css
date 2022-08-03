@@ -1,0 +1,56 @@
+.footer {
+  padding-top: 10px;
+  padding-left: 20px;
+  background-color: #6399E4;
+  width: 100%;
+  position: absolute;
+  bottom: -450px;
+  left: 0;
+}
+
+.footer__nav {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.footer__item {
+  margin-right: 30px;
+  margin-top: 30px;
+}
+
+.footer__link {
+  font-size: 14px;
+  color: #eee;
+  text-decoration: none;
+}
+
+.footer__logo {
+  height: 40px;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 5rem;
+}
+
+.footer__copyright {
+  font-size: 10px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.footer__copyright .footer__link {
+  font-size: 1.4rem;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.brand-logo {
+  height: 80px;
+  width: auto;
+  text-align: center;
+}
