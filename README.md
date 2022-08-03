@@ -23,7 +23,7 @@ These are the following services provided:
 ## Setup
 
 Launch the above mentioned 4 microservices in your IDE. Import the project as `Maven Project` and wait for the dependencies to install. If any port is unavailable in your machine you can modify the port for the respective microservice in the `application.properties` in
-`Backend/Authorization-Microservice/src/main/resources/application.properties`, and you can modify your login credentials in `data.sql` file in `Backend/Authorization-Microservice/src/main/resources/data.sql` and you can do the same for other microservice applications.
+`Backend/Authorization-Microservice/src/main/resources/application.properties`, you can modify your login credentials in `data.sql` file in `Backend/Authorization-Microservice/src/main/resources/data.sql` and you can do the same for other microservice applications.
 
 After the 4 microservices are up and running launch the claimsApp angular application using `ng serve -o`.
 The chrome window will load on it's own.
