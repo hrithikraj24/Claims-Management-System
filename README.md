@@ -23,14 +23,14 @@ These are the following services provided:
 ## Setup
 
 Launch the above mentioned 4 microservices in your IDE. Import the project as `Maven Project` and wait for the dependencies to install. If any port is unavailable in your machine you can change the port for the respective microservice in the `application.properties` in
-`Backend/Authorization-Microservice/src/main/resources/application.properties`, and you can modify your login credentials and other data in data.sql file in `Backend/Authorization-Microservice/src/main/resources/data.sql` and you can do the same for other microservice applications.
+`Backend/Authorization-Microservice/src/main/resources/application.properties`, and you can modify your login credentials in data.sql file in `Backend/Authorization-Microservice/src/main/resources/data.sql` and you can do the same for other microservice applications.
 
 After the 4 microservices are up and running launch the claimsApp angular application using `ng serve -o`.
 The chrome window will load on it's own.
 
 ## Special Feature
-You can also check the working of the application by running it on Postman or swagger.
-The swagger file has already been added. Check your port no. from the application.properties file and also the context path and `swagger-ui.html` to it.
+You can also check the working of the backend application by running it on `Postman` or `Swagger`.
+The swagger file has already been added. Check your port no. and context path from the application.properties file and add `swagger-ui.html` to it.
 For reference, `localhost:8400/swagger-ui.html`
 
 ## Prototype
@@ -58,9 +58,8 @@ You can now access the features as mentioned in the navigation bar.
 
 ### Bills Portal
 
-Registered users can enter their Member ID to view their bills which includes Due Amount, Last paid date and Premium Amount.
+Registered users can enter their Member ID to view their bills which includes Due Amount, Last Paid Date and Premium Amount.
 You can change the Member ID from the `data.sql` file in Member Microservice.
-`Backend/Member-Microservice/src/main/resources/data.sql`
 ![BIlls Portal](https://user-images.githubusercontent.com/51511924/182538224-493f0b6b-4ea1-4047-be69-9d05062c6cd5.jpg)
 
 ### Submitting a Claim
@@ -73,7 +72,8 @@ If a user wishes to submit a claim, the submit claim form can be used where the 
 * Benefits Availed
 * Claimed Amount
 
-Based on the details provided the status of the claim is decided to be either `Sanctioned` or `Rejected`. User will also be alloted a `Claim ID` for future reference.
+Based on the details provided the status of the claim is decided to be either `Sanctioned` or `Rejected`.
+User will also be alloted a `Claim ID` for future reference.
 ![Submit Claim](https://user-images.githubusercontent.com/51511924/182540964-d44831f1-a483-479f-ac6c-5acedaff3aaf.jpg)
 
 ### Claims Portal
