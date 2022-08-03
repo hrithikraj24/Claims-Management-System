@@ -49,7 +49,6 @@ In the navigation bar user can click the `Login` button for authentication.
 
 
 The user credentials is provided in the `data.sql` file of Authorization microservice.
-`Backend/Authorization-Microservice/src/main/resources/data.sql`
 ![Login Page](https://user-images.githubusercontent.com/51511924/182536946-9ccf575c-3c7b-456c-a1f1-c155204d0031.jpg)
 
 
