@@ -30,7 +30,7 @@ The chrome window will load on it's own.
 
 ## Special Feature
 You can also check the working of the backend application by running it on `Postman` or `Swagger`.
-The swagger file has already been added. Check your port no. and context path from the application.properties file and add `swagger-ui.html` to it.
+The swagger file has already been added. Check your port no. and context path from the `application.properties` file and add `swagger-ui.html` to it.
 For reference, `localhost:8400/swagger-ui.html`
 
 ## Prototype
