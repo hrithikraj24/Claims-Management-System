@@ -3,15 +3,14 @@ This is Java Full-stack project built as part of Cognizant Internship.
 
 
 These are the following services provided:
-
 ## Frontend
-* MVC Portal(MediClaim)
+* MVC Portal (MediClaim)
 
 ## Backend:
 * Authorization microservice
-* Member microservice
-* Claim microservice
 * Policy microservice
+* Claim microservice
+* Member microservice
 
 ## Requirements
 * Java 8
@@ -33,6 +32,9 @@ The chrome window will load on it's own.
 You can also check the working of the application by running it on Postman or swagger.
 The swagger file has already been added. Check your port no. from the application.properties file and also the context path and `swagger-ui.html` to it.
 For reference, `localhost:8400/swagger-ui.html`
+
+## Prototype
+We have also added the prototype we designed using `Figma`.
 
 ## Usage
 
@@ -61,9 +63,6 @@ You can change the Member ID from the `data.sql` file in Member Microservice.
 `Backend/Member-Microservice/src/main/resources/data.sql`
 ![BIlls Portal](https://user-images.githubusercontent.com/51511924/182538224-493f0b6b-4ea1-4047-be69-9d05062c6cd5.jpg)
 
-After entering your Member ID, this is how your window will look.
-![Bills Status](https://user-images.githubusercontent.com/51511924/182538228-cdcff8f5-25f9-46dd-9d88-efb56e2f8189.jpg)
-
 ### Submitting a Claim
 
 If a user wishes to submit a claim, the submit claim form can be used where the user can enter details regarding 
@@ -82,8 +81,6 @@ Based on the details provided the status of the claim is decided to be either `S
 The user can view the claim status at any time using the `Claim ID` generated in the previous step using the Claim status portal.
 ![Claims Portal](https://user-images.githubusercontent.com/51511924/182548043-04e11f94-80ef-4653-91fa-ccf738552be4.jpg)
 
-After entering the claim ID, this is how the window will look.
-![Claims Status](https://user-images.githubusercontent.com/51511924/182548033-995bb0cb-eae4-46d4-9fc7-a6b41df02a0d.jpg)
 
 ## Developers
 * [Hrithik Raj Prasad](https://github.com/hrithikraj24)
